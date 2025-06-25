@@ -39,3 +39,10 @@ def both(*args, **kwargs):
     print("Named arguments:", kwargs)
 
 both(1, 2, 3, name="Alice", age=30)  # This will print both positional and named arguments
+
+
+def myFunction(**kwargs):
+    print(kwargs)  # This will print the dictionary of named arguments
+
+myFunction(**"bob")  # This will raise an error because "bob" is a string, not a dictionary
+myFunction(**None)  # This will raise an error because None cannot be unpacked as keyword arguments
