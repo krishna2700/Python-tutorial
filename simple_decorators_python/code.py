@@ -21,7 +21,7 @@ def make_secure(func):
     return secure_get_admin
    
     
-get_admin_password = make_secure(get_admin_password)    
+get_admin_password = make_secure(get_admin_password)  # This wraps the get_admin_password function with security checks.    
 
 
 print(get_admin_password())  # This prints the admin password, which is "1234".
