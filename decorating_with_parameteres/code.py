@@ -14,7 +14,7 @@ def make_secure(access_level):
 
         return secure_get_admin
 
-    return decorator
+    return decorator 
 
 
 @make_secure("admin") # This decorator wraps the get_password function with security checks.
